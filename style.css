@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+main {
+    max-width: 1170px;
+    margin: 30px 170px;
+}
+
+.tabs__nav {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav__tab {
+    width: 184px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    z-index: 5;
+    font-family: 'Poppins';
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+}
+
+.nav__tab:hover {
+    background: #63050527;
+    border: 1px solid rgba(198, 203, 205, 1);
+    box-sizing: border-box;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom: none;
+}
+
+.tabs__content {
+    display: flex;
+    border: 1px solid rgba(198, 203, 205, 1);
+    box-sizing: border-box;
+    min-height: 501px;
+    position: relative;
+    z-index: 3;
+    min-width: 370px;
+}
+
+.tabs__text {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px 0 100px;
+    max-width: 870px;
+}
+
+.tabs__h3 {
+    min-height: 124px;
+    max-width: 570px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 27px;
+}
+
+.tabs__id {
+    width: 1200px;
+}
+
+#tab_2 {
+    background-color: rgba(46, 46, 99, 0.185);
+}
+
+#tab_3 {
+    background-color: rgba(0, 110, 0, 0.185);
+}
+
+.tabs__bottom {
+    width: 270px;
+    height: 58px;
+    color: rgb(255, 255, 255);
+    background: rgba(236, 121, 121, 1);
+    border: 0;
+    cursor: pointer;
+    font-family: Open Sans;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: 0em;
+    margin-bottom: 20px;
+}
+
+
+.tabs__text h3 {
+    font-family: 'Open Sans';
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 41px;
+    letter-spacing: 0em;
+}
+
+.text_h5 {
+    font-family: 'Raleway';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    vertical-align: Center;
+}
+
+.text_pre {
+    white-space: pre-wrap;
+}
+
+.tabs__id::before {
+    content: "";
+    width: 182px;
+    height: 40px;
+    border: 1px solid rgba(198, 203, 205, 1);
+    border-bottom: none;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    position: absolute;
+    background: rgb(255, 255, 255);
+    top: -41px;
+    left: -1px;
+}
+
+@media screen and (max-width:1320px) {
+
+    .tabs__text {
+        padding-left: 20px;
+    }
+
+    .nav__tab {
+        width: 70px;
+        min-width: 70px;
+    }
+
+    .tabs__content {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .tabs__content img {
+        width: 369px;
+        height: 370px;
+    }
+
+    .tabs__id::before {
+        width: 69px;
+    }
+}
+
+/* Задание 3 */
+
+h2 {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    align-items: center;
+    text-align: center;
+}
+
+h4 {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.about .text_h5 {
+    color: rgba(134, 135, 139, 1);
+    align-self: center;
+    margin: 40px 0;
+    text-align: center;
+}
+
+.about {
+    height: 665px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    min-width: 370px;
+}
+
+.awesome {
+    min-height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.hr {
+    width: 170px;
+    border-bottom: 1px solid #EC7979;
+    align-self: center;
+}
+
+.idea {
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.groop {
+    width: 370px;
+    height: 383px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.groop img {
+    width: 170px;
+    height: 170px;
+}
+
+.groop .text_h5 {
+    color: #000000;
+}
+
+.groop h4 {
+    margin-top: 30px;
+}
