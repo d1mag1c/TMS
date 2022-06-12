@@ -16,6 +16,7 @@ main {
 .part {
     max-width: 1170px;
     margin: 30px 170px;
+    min-width: 370px;
 }
 
 .tabs__nav {
@@ -161,7 +162,7 @@ main {
     }
 }
 
-/* Задание 3 */
+/* Р—Р°РґР°РЅРёРµ 3 */
 
 h2 {
     font-family: 'Raleway';
@@ -192,7 +193,6 @@ h4 {
 .about {
     min-height: 665px;
     margin-top: 50px;
-    min-width: 370px;
 }
 
 .section {
@@ -209,6 +209,7 @@ h4 {
     align-items: center;
     justify-content: center;
     width: 100%;
+    text-transform: uppercase;
 }
 
 .hr {
@@ -231,7 +232,6 @@ h4 {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-
 }
 
 .groop img {
@@ -248,15 +248,16 @@ h4 {
     margin-top: 30px;
 }
 
+/* Р—Р°РґР°РЅРёРµ 4 */
+
 .paricing {
-    width: 1510px;
     min-height: 900px;
     margin-top: 58px;
+    max-width: 1510px;
     min-width: 370px;
 }
 
 .paricing .awesome {
-    text-transform: uppercase;
     margin-top: 50px;
 }
 
@@ -270,12 +271,13 @@ h4 {
     justify-content: space-between;
     flex-wrap: wrap;
     margin: 0 170px;
+    min-height: 530px;
+    min-width: 370px;
 }
 
 .price_block {
     width: 370px;
     height: 510px;
-
     color: #86878B;
     box-sizing: border-box;
 }
@@ -286,14 +288,12 @@ h4 {
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 .price_block .price__money {
     height: 100px;
     border-top: 3px solid #F5F5F5;
     border-bottom: 3px solid #F5F5F5;
-
 }
 
 .black {
@@ -318,10 +318,87 @@ h4 {
     color: #FFFFFF;
 }
 
-.price__margin {
+.price_block:nth-child(2n+1) {
     margin-top: 20px;
 }
 
 .price_block:nth-child(2) {
     box-shadow: 0px 4px 10px 0 rgba(51, 51, 51, 0.3);
+}
+
+@media screen and (max-width:800px) {
+
+    .paricing {
+        margin: 0 170px;
+    }
+
+    .praice {
+        margin: 0;
+    }
+}
+
+/* Р—Р°РґР°РЅРёРµ 5 */
+
+.custom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.custom__block {
+    width: 370px;
+    height: 336px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.custom__text {
+    width: 370px;
+    height: 180px;
+    border-radius: 10px;
+    background: rgba(226, 226, 226, 1);
+    margin-bottom: 66px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-left: 21px;
+}
+
+.custom__text::after {
+    content: "";
+    position: relative;
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 20px solid rgba(226, 226, 226, 1);
+    top: 100px;
+    right: 255px;
+}
+
+.man {
+    display: flex;
+    flex-direction: column;
+}
+
+.custom__name {
+    width: 269px;
+    height: 54px;
+    font-family: "Open Sans";
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 33px;
+    margin-left: 30px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.manager {
+    width: 270px;
+    height: 21px;
+    margin-left: 30px;
 }
