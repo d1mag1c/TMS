@@ -13,12 +13,30 @@ main {
     max-width: 1510px;
 }
 
+h1 {
+    font-family: 'Raleway';
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 56px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
 h2 {
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 400;
     font-size: 36px;
     line-height: 42px;
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Open Sans';
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 41px;
+    letter-spacing: 0em;
 }
 
 h4 {
@@ -28,6 +46,20 @@ h4 {
     font-size: 24px;
     line-height: 33px;
     text-transform: capitalize;
+}
+
+.text_h5 {
+    font-family: 'Raleway';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(0, 0, 0, 1);
+}
+
+.text_pre {
+    white-space: pre-wrap;
 }
 
 .input_style {
@@ -40,7 +72,27 @@ h4 {
     min-width: 370px;
 }
 
-/* Р—Р°РґР°РЅРёРµ 10 */
+.part {
+    max-width: 1170px;
+    margin: 30px 170px;
+    min-width: 370px;
+}
+
+.tabs__bottom {
+    width: 270px;
+    height: 58px;
+    color: rgb(255, 255, 255);
+    background: rgba(236, 121, 121, 1);
+    border: 0;
+    cursor: pointer;
+    font-family: 'Open Sans';
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: 0em;
+}
+
+/* mission 10 */
 
 .header {
     display: flex;
@@ -77,16 +129,7 @@ h4 {
     line-height: 19px;
 }
 
-/* Р—Р°РґР°РЅРёРµ 11 */
-
-h1 {
-    font-family: 'Raleway';
-    font-size: 48px;
-    font-weight: 500;
-    line-height: 56px;
-    letter-spacing: 0em;
-    text-align: left;
-}
+/* mission 11 */
 
 .axit {
     max-width: 1510px;
@@ -137,12 +180,12 @@ h1 {
 .axit__text {
     width: 270px;
     height: 42px;
+    color: white;
 }
 
 .axit__content input[type="button"] {
     background: rgba(0, 0, 0, 0);
     border: 2px solid rgba(255, 255, 255, 1);
-    margin: 0;
 }
 
 .axit__form {
@@ -161,7 +204,6 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 .axit__form .form__h4 h4 {
@@ -185,7 +227,6 @@ h4 span {
 }
 
 .axit__form .tabs__bottom {
-    margin: 0;
     width: 100%;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -197,7 +238,7 @@ h4 span {
     letter-spacing: 0em;
 }
 
-/* Р—Р°РґР°РЅРёРµ 9 */
+/* mission 9 */
 
 .social {
     display: flex;
@@ -220,7 +261,6 @@ h4 span {
 
 .social__text .text_h5 {
     color: rgba(134, 135, 139, 1);
-
 }
 
 .social__icon {
@@ -228,7 +268,6 @@ h4 span {
     align-items: center;
     min-height: 140px;
     flex-wrap: wrap;
-
 }
 
 .social__icon img {
@@ -236,158 +275,89 @@ h4 span {
     margin-left: 30px;
 }
 
-/* Р—Р°РґР°РЅРёРµ 2 */
+/* mission 2 */
 
-.part {
-    max-width: 1170px;
-    margin: 30px 170px;
-    min-width: 370px;
+.tabs>input[type="radio"] {
+    display: none;
 }
 
-.tabs__nav {
+.tabs>div {
+    display: none;
+    border: 1px solid rgba(198, 203, 205, 1)
+}
+
+.tabs__block {
     display: flex;
     flex-direction: row;
-}
-
-.nav__tab {
-    width: 184px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
-    z-index: 5;
-    font-family: 'Open Sans';
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 19px;
-    letter-spacing: 0em;
-}
-
-.nav__tab:hover {
-    background: #63050527;
-    border: 1px solid rgba(198, 203, 205, 1);
-    box-sizing: border-box;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    border-bottom: none;
+    justify-content: end;
+    min-height: 500px;
 }
 
 .tabs__content {
-    display: flex;
-    border: 1px solid rgba(198, 203, 205, 1);
-    box-sizing: border-box;
-    min-height: 501px;
-    position: relative;
-    z-index: 3;
-    min-width: 370px;
-}
-
-.tabs__text {
+    max-width: 700px;
     display: flex;
     flex-direction: column;
-    padding: 0 20px 0 100px;
-    max-width: 870px;
+    justify-content: space-between;
+    padding: 0 30px;
 }
 
 .tabs__h3 {
-    min-height: 124px;
     max-width: 570px;
+    height: 124px;
     display: flex;
     align-items: center;
-    margin-bottom: 27px;
 }
 
-.tabs__id {
-    width: 1200px;
+.tabs__text {
+    max-width: 570px;
+    min-height: 210px;
+    margin-bottom: 10px;
 }
 
-#tab_2 {
-    background-color: rgba(46, 46, 99, 0.185);
+.tabs__content input {
+    margin-bottom: 54px;
 }
 
-#tab_3 {
-    background-color: rgba(0, 110, 0, 0.185);
+#tab-btn-1:checked~#content-1,
+#tab-btn-2:checked~#content-2,
+#tab-btn-3:checked~#content-3 {
+    display: block;
 }
 
-.tabs__bottom {
-    width: 270px;
-    height: 58px;
-    color: rgb(255, 255, 255);
-    background: rgba(236, 121, 121, 1);
-    border: 0;
+.tabs>label {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
     cursor: pointer;
-    font-family: 'Open Sans';
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 25px;
-    letter-spacing: 0em;
-    margin-bottom: 20px;
-}
-
-
-.tabs__text h3 {
-    font-family: 'Open Sans';
-    font-size: 30px;
-    font-weight: 700;
-    line-height: 41px;
-    letter-spacing: 0em;
-}
-
-.text_h5 {
-    font-family: 'Raleway';
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 21px;
-    letter-spacing: 0em;
-    text-align: left;
-}
-
-.text_pre {
-    white-space: pre-wrap;
-}
-
-.tabs__id::before {
-    content: "";
-    width: 182px;
+    position: relative;
+    top: 1px;
+    width: 203px;
     height: 40px;
+    padding-top: 10px;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0em;
+}
+
+
+.tabs>input[type="radio"]:checked+label {
+    background-color: #fff;
     border: 1px solid rgba(198, 203, 205, 1);
-    border-bottom: none;
+    border-bottom: 1px solid #fff;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    position: absolute;
-    background: rgb(255, 255, 255);
-    top: -41px;
-    left: -1px;
 }
 
-@media screen and (max-width:1320px) {
-
-    .tabs__text {
-        padding-left: 20px;
-    }
-
-    .nav__tab {
-        width: 70px;
-        min-width: 70px;
-    }
-
-    .tabs__content {
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
-    .tabs__content img {
-        width: 369px;
-        height: 370px;
-    }
-
-    .tabs__id::before {
-        width: 69px;
+@media screen and (max-width:1212px) {
+    .tabs__block img {
+        display: none;
     }
 }
 
-/* Р—Р°РґР°РЅРёРµ 3 */
+/* mission 3 */
 
 .section__text {
     color: rgba(134, 135, 139, 1);
@@ -453,7 +423,7 @@ h4 span {
     margin-top: 30px;
 }
 
-/* Р—Р°РґР°РЅРёРµ 4 */
+/* mission 4 */
 
 .paricing {
     min-height: 900px;
@@ -542,7 +512,7 @@ h4 span {
     }
 }
 
-/* Р—Р°РґР°РЅРёРµ 5 */
+/* mission 5 */
 
 .custom {
     display: flex;
@@ -608,7 +578,7 @@ h4 span {
     margin-left: 30px;
 }
 
-/* Р—Р°РґР°РЅРёРµ 6 */
+/* mission 6 */
 
 .banner {
     max-width: 1510px;
@@ -637,12 +607,12 @@ h4 span {
     font-weight: lighter;
 }
 
-/* Р—Р°РґР°РЅРёРµ 7 */
+/* mission 7 */
 
 .contact {
     display: flex;
     flex-direction: column;
-
+    margin-bottom: 50px;
 }
 
 .contact__input {
@@ -676,7 +646,7 @@ textarea {
     background: rgba(236, 121, 121, 1);
 }
 
-/* Р—Р°РґР°РЅРёРµ 8 */
+/* mission 8 */
 
 .footer {
     max-width: 1510px;
