@@ -17,14 +17,20 @@
 <body>
     <main>
         <div class="axit">
-            <div class="header">
-                <img src="img/logo.svg" alt="logo">
-                <div class="header__menu">
-                    <a href="">Features</a>
-                    <a href="">About</a>
-                    <a href="">Pricing</a>
-                    <a href="">Reviews</a>
-                    <a href="">Contact</a>
+            <div id="close">
+                <div id="open" class="header">
+                    <img src="img/logo.svg" alt="logo">
+                    <div class="header__menu">
+                        <a href="#features">Features</a>
+                        <a href="#about">About</a>
+                        <a href="#pricing">Pricing</a>
+                        <a href="#rewiews">Reviews</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                    <div class="menu">
+                        <a href="#open"><img src="icon/Vector.svg" alt="menu" class="menu__button"></a>
+                        <a href="#close"><img src="icon/x.svg" alt="menu" class="menu__button_close"></a>
+                    </div>
                 </div>
             </div>
             <div class="axit__block">
@@ -39,7 +45,7 @@
                     <div class="axit__text text_h5">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                     </div>
-                    <input type="button" value="Download" class="tabs__bottom">
+                    <input type="button" value="Download" class="tabs__bottom button1">
 
                 </div>
                 <div class="axit__form">
@@ -51,7 +57,7 @@
                         <input type="Email" name="Email" class="input_style" placeholder="Email">
                         <input type="password" name="Password" class="input_style" placeholder="Password">
                     </div>
-                    <input type="button" value="Get Started" class="tabs__bottom">
+                    <input type="button" value="Get Started" class="tabs__bottom button2">
                 </div>
             </div>
         </div>
@@ -73,7 +79,7 @@
                 <img src="icon/rss.svg" alt="rss">
             </div>
         </div>
-        <div class="tabs part">
+        <div class="tabs part" id="features">
             <input type="radio" name="tab-btn" id="tab-btn-1" value="" checked>
             <label for="tab-btn-1">TAB 1</label>
             <input type="radio" name="tab-btn" id="tab-btn-2" value="">
@@ -88,18 +94,18 @@
                         </div>
                         <div class="tabs__text">
                             <p class="text_h5 text_pre">
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-euismod
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
 bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
 justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
 penatibus et magnis dis parturient montes.
+
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
 bibendum laoreet.
                             </p>
                         </div>
-                        <input type="button" value="Download" class="tabs__bottom">
+                        <input type="button" value="Download" class="tabs__bottom button2">
                     </div>
-                    <img src="img/111.jpg" alt="РЎС‚Р°С‚СѓСЏ">
+                    <img src="img/111.jpg" alt="miracle1">
                 </div>
             </div>
             <div id="content-2">
@@ -114,13 +120,14 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
 bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
 justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
 penatibus et magnis dis parturient montes.
+
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
 bibendum laoreet.
                             </p>
                         </div>
-                        <input type="button" value="Download" class="tabs__bottom">
+                        <input type="button" value="Download" class="tabs__bottom button2">
                     </div>
-                    <img src="img/222.jpg" alt="РЎС‚Р°С‚СѓСЏ">
+                    <img src="img/222.jpg" alt="miracle2">
                 </div>
             </div>
             <div id="content-3">
@@ -135,17 +142,18 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
 bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
 justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
 penatibus et magnis dis parturient montes.
+
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
 bibendum laoreet.
                             </p>
                         </div>
-                        <input type="button" value="Download" class="tabs__bottom">
+                        <input type="button" value="Download" class="tabs__bottom button2">
                     </div>
-                    <img src="img/333.jpg" alt="РЎС‚Р°С‚СѓСЏ">
+                    <img src="img/333.jpg" alt="miracle3">
                 </div>
             </div>
         </div>
-        <div class="part about ">
+        <div class="part about " id="about">
             <div class="section">
                 <div class="awesome">
                     <h2>WHY THIS IS AWESOME</h2>
@@ -191,7 +199,7 @@ accumsan et viverra.
                 </div>
             </div>
         </div>
-        <div class="paricing">
+        <div class="paricing part" id="pricing">
             <div class="section">
                 <div class="awesome">
                     <h2>pricing options</h2>
@@ -203,9 +211,9 @@ accumsan et viverra.
             </div>
             <div class="praice">
                 <div class="price_block text_h5">
-                    <p class="black praice__text_h4">Basic</p>
-                    <p class="black price__money praice__text_h3">$10</p>
-                    <p class="black">Free for life</p>
+                    <h3>Basic</h3>
+                    <h2>$10</h2>
+                    <p>Free for life</p>
                     <p>1 Gb Of Space</p>
                     <p>1 Gb Of Space</p>
                     <p>1 Gb Of Space</p>
@@ -214,9 +222,9 @@ accumsan et viverra.
                     <p>1 Gb Of Space</p>
                 </div>
                 <div class="price_block text_h5">
-                    <p class="black praice__text_h4">Optima</p>
-                    <p class="black price__money praice__text_h3">$20</p>
-                    <p class="black">Free for life</p>
+                    <h3>Optima</h3>
+                    <h2>$20</h2>
+                    <p>Free for life</p>
                     <p>1 Gb Of Space</p>
                     <p>1 Gb Of Space</p>
                     <p>1 Gb Of Space</p>
@@ -225,9 +233,9 @@ accumsan et viverra.
                     <p>1 Gb Of Space</p>
                 </div>
                 <div class="price_block text_h5">
-                    <p class="black praice__text_h4">Pro</p>
-                    <p class="black price__money praice__text_h3">$30</p>
-                    <p class="black ">Free for life</p>
+                    <h3>Pro</h3>
+                    <h2>$30</h2>
+                    <p>Free for life</p>
                     <p>1 Gb Of Space</p>
                     <p>1 Gb Of Space</p>
                     <p>1 Gb Of Space</p>
@@ -237,7 +245,7 @@ accumsan et viverra.
                 </div>
             </div>
         </div>
-        <div class="rewiews part">
+        <div class="rewiews part" id="rewiews">
             <div class="section">
                 <div class="awesome">
                     <h2>what our customers are saying</h2>
@@ -248,63 +256,75 @@ accumsan et viverra.
                 </div>
             </div>
             <div class="custom">
-                <div class="custom__block">
-                    <div class="custom__text text_h5">
-                        Lorem ipsum dolor sit amet,
-                        consectetur adipisicing elit. Doloribus
-                        accusamus expedita repellat similique
-                        odio aspernatur ex, architecto eaque
-                        quo suscipit.
-                    </div>
-                    <div>
-                        <img src="foto/foto_1.jpg" alt="Davis Rhiel Madsen">
-                    </div>
-                    <div class="man">
-                        <div class="custom__name ">
-                            <p>Davis Rhiel Madsen</p>
+                <input type="radio" name="custom_input" id="custom_input1" value="">
+                <label for="custom_input1"></label>
+                <input type="radio" name="custom_input" id="custom_input2" value="" checked>
+                <label for="custom_input2"></label>
+                <input type="radio" name="custom_input" id="custom_input3" value="">
+                <label for="custom_input3"></label>
+                <div id="custom_input1" class="none">
+                    <div class="custom__block">
+                        <div class="custom__text text_h5">
+                            Lorem ipsum dolor sit amet,
+                            consectetur adipisicing elit. Doloribus
+                            accusamus expedita repellat similique
+                            odio aspernatur ex, architecto eaque
+                            quo suscipit.
                         </div>
-                        <div class="manager text_h5">
-                            <p>Manager</p>
+                        <div>
+                            <img src="foto/foto_1.jpg" alt="Davis Rhiel Madsen">
                         </div>
-                    </div>
-                </div>
-                <div class="custom__block">
-                    <div class="custom__text text_h5">
-                        Lorem ipsum dolor sit amet,
-                        consectetur adipisicing elit. Doloribus
-                        accusamus expedita repellat similique
-                        odio aspernatur ex, architecto eaque
-                        quo suscipit.
-                    </div>
-                    <div>
-                        <img src="foto/foto_2.jpg" alt="Jaydon Rosser">
-                    </div>
-                    <div class="man">
-                        <div class="custom__name">
-                            <p>Jaydon Rosser</p>
-                        </div>
-                        <div class="manager text_h5">
-                            <p>Manager</p>
+                        <div class="man">
+                            <div class="custom__name ">
+                                <p>Davis Rhiel Madsen</p>
+                            </div>
+                            <div class="manager text_h5">
+                                <p>Manager</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="custom__block">
-                    <div class="custom__text text_h5">
-                        Lorem ipsum dolor sit amet,
-                        consectetur adipisicing elit. Doloribus
-                        accusamus expedita repellat similique
-                        odio aspernatur ex, architecto eaque
-                        quo suscipit.
-                    </div>
-                    <div class="foto">
-                        <img src="foto/foto_3.jpg" alt="Cooper Dorwart">
-                    </div>
-                    <div class="man">
-                        <div class="custom__name">
-                            <p>Cooper Dorwart</p>
+                <div id="custom_input2" class="none">
+                    <div class="custom__block" id="custom_input2">
+                        <div class="custom__text text_h5">
+                            Lorem ipsum dolor sit amet,
+                            consectetur adipisicing elit. Doloribus
+                            accusamus expedita repellat similique
+                            odio aspernatur ex, architecto eaque
+                            quo suscipit.
                         </div>
-                        <div class="manager text_h5">
-                            <p>Manager</p>
+                        <div>
+                            <img src="foto/foto_2.jpg" alt="Jaydon Rosser">
+                        </div>
+                        <div class="man">
+                            <div class="custom__name">
+                                <p>Jaydon Rosser</p>
+                            </div>
+                            <div class="manager text_h5">
+                                <p>Manager</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="custom_input3" class="none">
+                    <div class="custom__block" id="custom_input3">
+                        <div class="custom__text text_h5">
+                            Lorem ipsum dolor sit amet,
+                            consectetur adipisicing elit. Doloribus
+                            accusamus expedita repellat similique
+                            odio aspernatur ex, architecto eaque
+                            quo suscipit.
+                        </div>
+                        <div class="foto">
+                            <img src="foto/foto_3.jpg" alt="Cooper Dorwart">
+                        </div>
+                        <div class="man">
+                            <div class="custom__name">
+                                <p>Cooper Dorwart</p>
+                            </div>
+                            <div class="manager text_h5">
+                                <p>Manager</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -321,9 +341,9 @@ accumsan et viverra.
                         ever!</p>
                 </div>
             </div>
-            <input type="button" value="Download" class="tabs__bottom banner__bottom">
+            <input type="button" value="Download" class="tabs__bottom banner__bottom button1">
         </div>
-        <div class="contact part">
+        <div class="contact part" id="contact">
             <div class="section">
                 <div class="awesome">
                     <h2>contact us</h2>
@@ -341,7 +361,7 @@ accumsan et viverra.
                 </div>
                 <textarea name="massage" placeholder="Massage"></textarea>
             </div>
-            <input type="button" value="Send Message" class="tabs__bottom banner__bottom">
+            <input type="button" value="Send Message" class="button2 tabs__bottom banner__bottom">
         </div>
         <div class="footer">
             <img src="icon/facebook.svg" alt="facebook">
@@ -351,7 +371,7 @@ accumsan et viverra.
             <img src="icon/instagram.svg" alt="instagram">
             <img src="icon/github.svg" alt="github">
             <img src="icon/rss.svg" alt="rss">
-            <p class="text_h5 section__text">В© 2015 Axure Themes</p>
+            <p class="text_h5 section__text">&copy 2015 Axure Themes</p>
         </div>
     </main>
 </body>
