@@ -640,16 +640,23 @@ textarea {
     height: 164px;
     background: black;
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
     padding: 35px 0 27px 0;
+}
+
+.footer>div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 28px;
+    width: 570px;
 }
 
 .footer img {
     height: 53.2px;
     width: 53.2px;
-    margin-right: 32.8px;
 }
 
 .footer img:last-of-type {
@@ -657,8 +664,6 @@ textarea {
 }
 
 .footer p {
-    width: 1170px;
-    height: 21px;
     margin: 0;
 }
 
@@ -1099,7 +1104,6 @@ textarea {
 
     .paricing .section {
         margin-bottom: 24px;
-
     }
 
     .price_block p {
@@ -1199,13 +1203,10 @@ textarea {
     .footer img {
         height: 26x;
         width: 26px;
-        margin-right: 0;
     }
 
-    .footer p {
-        width: 288px;
-        margin-top: 27px;
-        justify-self: end;
+    .footer>div {
+        width: 300px;
     }
 
     .menu {
@@ -1248,11 +1249,6 @@ textarea {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    }
-
-    .footer {
-        margin-top: 40px;
-        justify-content: space-around;
     }
 
     .banner {
