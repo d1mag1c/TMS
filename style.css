@@ -11,6 +11,7 @@ a {
 
 main {
     max-width: 1510px;
+    margin: 0 auto;
 }
 
 h1 {
